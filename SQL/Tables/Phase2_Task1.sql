@@ -1,0 +1,54 @@
+/*
+Danny Le
+CSCI 4125
+*/
+
+DROP TABLE Timecard2;
+DROP TABLE Bed2;
+DROP TABLE Patient2;
+DROP TABLE Nurse2;
+DROP TABLE Physician2;
+
+CREATE TABLE Physician2 (
+    Ph_ID VARCHAR(10),
+    Ph_Name VARCHAR(20),
+    Ph_Specialty VARCHAR(20),
+    CONSTRAINT Phys2PK PRIMARY KEY (Ph_ID)
+);
+
+CREATE TABLE Nurse2 (
+    N_ID VARCHAR(10),
+    N_Name VARCHAR(20),
+    N_Salary NUMBER,
+    N_Super VARCHAR(10),
+    CONSTRAINT Nurs2PK PRIMARY KEY (N_ID),
+    CONSTRAINT Super2FK FOREIGN KEY (N_Super) REFERENCES Nurse2(N_ID)
+);
+
+CREATE TABLE Patient2 (
+    P_Number VARCHAR(10),
+    P_Name VARCHAR (20),
+    P_Age NUMBER, 
+    P_PhysID VARCHAR(10),
+    CONSTRAINT Pat2PK PRIMARY KEY (P_Number),
+    CONSTRAINT PatPhys2FK FOREIGN KEY (P_PhysID) REFERENCES Physician2(Ph_ID)
+);
+
+CREATE TABLE Bed2 (
+    B_Number VARCHAR(5),
+    B_Room NUMBER,
+    B_Unit VARCHAR(20),
+    B_Pat VARCHAR(10),
+    B_NursID VARCHAR(10),
+    CONSTRAINT Bed2PK PRIMARY KEY (B_Number), 
+    CONSTRAINT Pat2FK FOREIGN KEY (B_Pat) REFERENCES Patient2(P_Number),
+    CONSTRAINT Nurs2FK FOREIGN KEY (B_NursID) REFERENCES Nurse2(N_ID)
+);
+
+CREATE TABLE Timecard2(
+    T_PhysID VARCHAR(10),
+    T_Date DATE,
+    T_Hours NUMBER,
+    CONSTRAINT TimePK PRIMARY KEY (T_Date, T_PhysID),
+    CONSTRAINT Phys2FK FOREIGN KEY (T_PhysID) REFERENCES Physician2(Ph_ID)
+);

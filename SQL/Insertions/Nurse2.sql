@@ -1,0 +1,17 @@
+INSERT INTO Nurse2 VALUES ('N01', 'Kathy Johnson', 120000, NULL);
+INSERT INTO Nurse2 VALUES ('N13', 'Vassil Roussev', 92000, 'N01');
+INSERT INTO Nurse2 VALUES ('N03', 'Chris Summa', 88000, 'N01');
+INSERT INTO Nurse2 VALUES ('N05', 'Mahdi Abdeguerfi', 90000, 'N01');
+INSERT INTO Nurse2 VALUES ('N09', 'Tamjid Hoque', 88000, 'N01');
+INSERT INTO Nurse2 VALUES ('N02', 'James Wagner', 75000, 'N05');
+INSERT INTO Nurse2 VALUES ('N04', 'Ben Samuel', 79000, 'N03');
+INSERT INTO Nurse2 VALUES ('N06', 'Allen Toussaint', 82000, 'N03');
+INSERT INTO Nurse2 VALUES ('N07', 'Ted Holmberg', 81000, 'N05');
+INSERT INTO Nurse2 VALUES ('N08', 'David Pace', 80000, 'N09');
+INSERT INTO Nurse2 VALUES ('N10', 'Dr. John', 80000, 'N09');
+INSERT INTO Nurse2 VALUES ('N11', 'Joe Sylve', 78000, 'N05');
+INSERT INTO Nurse2 VALUES ('N12', 'Redwan Newaz', 82000, 'N13');
+INSERT INTO Nurse2 VALUES ('N14', 'Shreya Banerjee', 83000, 'N13');
+INSERT INTO Nurse2 VALUES ('N15', 'Yasin Nur', 77000, 'N13');
+INSERT INTO Nurse2 VALUES ('N16', 'Adlai DePano', 89000, 'N01');
+commit;

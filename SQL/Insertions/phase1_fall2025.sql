@@ -1,0 +1,15 @@
+INSERT INTO phase1_fall2025 VALUES ('D05', '31-Jan-23', 8);
+INSERT INTO phase1_fall2025 VALUES ('D11', 'Jamie Foxx', 'Surgery');
+INSERT INTO phase1_fall2025 VALUES ('D12', 'Tom Hardy', 'Anesthesiology');
+INSERT INTO phase1_fall2025 VALUES ('D17', '31-Jan-23', 8);
+INSERT INTO phase1_fall2025 VALUES ('D18', '31-Jan-23', 8);
+INSERT INTO phase1_fall2025 VALUES ('P01', 'Taylor Swift', 32, 'D01');
+INSERT INTO phase1_fall2025 VALUES ('P02', 'Bruno Mars', 31, 'D04');
+INSERT INTO phase1_fall2025 VALUES ('P03', 'Justin Bieber', 29, 'D07');
+INSERT INTO phase1_fall2025 VALUES ('N03', 'Chris Summa', 88000, 'N01');
+INSERT INTO phase1_fall2025 VALUES ('N05', 'Vassil Roussev', 90000, 'N01');
+INSERT INTO phase1_fall2025 VALUES ('N09', 'Tamjid Hoque', 88000, 'N01');
+INSERT INTO phase1_fall2025 VALUES ('B18', 112, 'Intensive Care Unit', 'P07', 'N01');
+INSERT INTO phase1_fall2025 VALUES ('B19', 113, 'Intensive Care Unit', NULL, NULL);
+INSERT INTO phase1_fall2025 VALUES ('B20', 114, 'Intensive Care Unit', NULL, NULL);
+commit;
