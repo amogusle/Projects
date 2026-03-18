@@ -12,6 +12,7 @@ public class PetiteBete {
         this.attack= newattack;
         this.speed= newspeed;
     }
+    
     String getname() {
         return this.name;
     }
