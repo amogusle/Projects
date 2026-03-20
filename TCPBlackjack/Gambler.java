@@ -55,7 +55,7 @@ public class Gambler implements Runnable {
                 BufferedReader inReader = new BufferedReader(new InputStreamReader(System.in));
                 while (!done) {
                     String message = inReader.readLine();
-                    if(message.equals("Bye")) {
+                    if(message.equals("/leave")) {
                         inReader.close();
                         shutdown();
                     } 
